@@ -1,0 +1,13 @@
+﻿Mon1,Mon2,Correlation
+khoi_a,khoi_a,1.0
+khoi_a,khoi_b,0.8110446347927189
+khoi_a,khoi_d,0.5211997035412781
+khoi_b,khoi_a,0.8110446347927189
+khoi_b,khoi_b,1.0
+khoi_b,khoi_d,0.5063893755699422
+khoi_c,khoi_c,1.0
+khoi_c,khoi_d,0.6927105488764328
+khoi_d,khoi_a,0.5211997035412781
+khoi_d,khoi_b,0.5063893755699422
+khoi_d,khoi_c,0.6927105488764328
+khoi_d,khoi_d,1.0
