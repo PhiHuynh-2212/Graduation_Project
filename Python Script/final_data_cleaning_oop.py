@@ -144,7 +144,8 @@ def main():
 
     df_national_high_school_exam_score = data.concat_all()
     df_national_high_school_exam_score = data.add_column_khtn_khxh_khoia_khoib_khoic_khoid(df_national_high_school_exam_score)
-    df_national_high_school_exam_score = df_national_high_school_exam_score.drop(columns=['province'])
+    df_national_high_school_exam_score = df_national_high_school_exam_score.drop(columns=['province'], errors='ignore')
+
     df_national_high_school_exam_score.to_csv(r"C:\FPT Polytechnic\Project Tự Làm\Điểm thi thpt 2020 - 2024\processed.csv",index=False,encoding='utf-8-sig')
 
     df_national_high_school_exam_score.info()
