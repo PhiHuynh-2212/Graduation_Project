@@ -63,7 +63,7 @@ class NationalHighSchoolExamScore:
     def add_column_code_year(self):
         for i, (path, df) in enumerate(self.dataframes):
             if 'code' not in df.columns and 'sbd' in df.columns:
-                df['code'] = df['sbd'].astype(str).str[:2].astype(int)
+                df['code'] = df['sbd'].astype(str).apply(lambda x: int(x[:2]) if len(x) == 8 else int(x[:1]))
                 print(f" Added 'code' to file: {path}")
             if 'year' not in df.columns:
                 df['year'] = 2022 + i - 1  
